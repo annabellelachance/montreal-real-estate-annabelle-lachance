@@ -2,7 +2,7 @@
 if ( !defined( 'ABSPATH' ) )
 exit;
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+ <?php language_attributes(); ?>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -13,13 +13,6 @@ exit;
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-
-<div class='align-right'>
-   <button class='hide-text'>Menu</button>
-</div>
 
 <header>
 <div class='branding'>
@@ -45,6 +38,16 @@ exit;
 
 <?php get_search_form(); ?>
 </header>
+
+
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+
+<div class='align-right'>
+   <button class='hide-text'>Menu</button>
+</div>
+
+
 
 
 <nav class="primary-nav">
